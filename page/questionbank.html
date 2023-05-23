@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ subject }}-可憐題庫</title>
+    <link rel="stylesheet" href="/document/977se?filetype=css&filename=index.css">
+    <script src="/document/977se?filetype=javascript&filename=jquery-3.6.0.min.js"></script>
+    <script src="/document/977se?filetype=javascript&filename=index.js"></script>
+</head>
+<body style="width: 100vw; height: 100vh; background-color: gray;">
+    <div style="width: 96%; height: 15%; position: fixed; display: flex; align-items: center; background-color: darkslategray; color: white; padding: 0 2% 0 2%;">
+        <div style="font-size: xx-large; font-weight: bolder;">科目：{{ subject }}</div>
+        <a href="/questionbank" style="font-size: xx-large;">回題庫</a>
+        <div style="font-size: xx-large; font-weight: bolder; margin-left: auto;">題數：{{ num }}</div>
+    </div>
+    <div style="width: 100%; height: 15%;"></div>
+    <div id="questionbank-list">
+        <div>
+            {{ question }}
+        </div>
+    </div>
+</body>
+</html>
